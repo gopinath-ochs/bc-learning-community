@@ -362,6 +362,90 @@
       color: #A8B5AC;
       border-top: 1px solid var(--color-border);
     }
+
+    /* Faculty section */
+    .faculty-section {
+      background: var(--color-accent-deep);
+      padding: 72px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .faculty-section::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(circle at 10% 50%, rgba(196,164,108,0.07) 0%, transparent 45%),
+        radial-gradient(circle at 90% 50%, rgba(196,164,108,0.05) 0%, transparent 45%);
+      pointer-events: none;
+    }
+    .faculty-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      position: relative; z-index: 1;
+    }
+    .faculty-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+    .faculty-label {
+      font-family: var(--font-sans);
+      font-weight: 400;
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 16px;
+    }
+    .faculty-header h2 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+      color: #EDE8DF;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+    .faculty-header p {
+      font-size: 0.9rem;
+      color: #8A9A8E;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0;
+      border-top: 1px solid rgba(196,164,108,0.15);
+      border-left: 1px solid rgba(196,164,108,0.15);
+    }
+    .faculty-name {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: 1.15rem;
+      color: #EDE8DF;
+      padding: 22px 24px;
+      border-right: 1px solid rgba(196,164,108,0.15);
+      border-bottom: 1px solid rgba(196,164,108,0.15);
+      transition: background 0.2s;
+      line-height: 1.3;
+    }
+    .faculty-name:hover {
+      background: rgba(196,164,108,0.06);
+    }
+    .faculty-title {
+      font-family: var(--font-sans);
+      font-weight: 300;
+      font-size: 0.72rem;
+      letter-spacing: 1px;
+      color: var(--color-gold);
+      text-transform: uppercase;
+      display: block;
+      margin-top: 4px;
+    }
+    @media (max-width: 600px) {
+      .faculty-section { padding: 56px 20px; }
+      .faculty-grid { grid-template-columns: repeat(2, 1fr); }
+      .faculty-name { padding: 18px 16px; font-size: 1rem; }
+    }
   </style>
 </head>
 <body>
@@ -405,6 +489,40 @@
   <p>We are exploring a Learning Community: a shared space for students and scholars to stay connected and continue learning between courses.</p>
   <p>This would be a low-cost monthly membership — in the region of &euro;10 to &euro;15 per month — distinct from individual courses, which continue to be offered separately.</p>
   <p>The community might include monthly scholar Q&amp;A sessions, reading groups, a curated library, and peer forums. Nothing is finalised. Your feedback will shape what we build.</p>
+</section>
+
+<div class="lotus-divider">
+  <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M60 4 C60 4, 52 14, 42 18 C32 22, 20 20, 20 20" stroke="#C4A46C" stroke-width="0.8" fill="none" opacity="0.5"/>
+    <path d="M60 4 C60 4, 68 14, 78 18 C88 22, 100 20, 100 20" stroke="#C4A46C" stroke-width="0.8" fill="none" opacity="0.5"/>
+    <circle cx="60" cy="4" r="2" fill="#C4A46C" opacity="0.4"/>
+    <line x1="8" y1="20" x2="40" y2="20" stroke="#C4A46C" stroke-width="0.5" opacity="0.25"/>
+    <line x1="80" y1="20" x2="112" y2="20" stroke="#C4A46C" stroke-width="0.5" opacity="0.25"/>
+  </svg>
+</div>
+
+<section class="faculty-section">
+  <div class="faculty-inner">
+    <div class="faculty-header">
+      <div class="faculty-label">Faculty</div>
+      <h2>Scholars who have agreed to teach</h2>
+      <p>The following scholars have confirmed their involvement in courses and the Learning Community.</p>
+    </div>
+    <div class="faculty-grid">
+      <div class="faculty-name">Gopinathacarya<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Krishna Ksetra<span class="faculty-title"> Swami</span></div>
+      <div class="faculty-name">Bhrigupada<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Pranava<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Arya<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Yogeshvar<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Rasamandala<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Gopal Hari<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Shaunaka Rishi<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Krsna Sarana<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Ramhari<span class="faculty-title"> Prabhu</span></div>
+      <div class="faculty-name">Radhika Raman<span class="faculty-title"> Prabhu</span></div>
+    </div>
+  </div>
 </section>
 
 <div class="lotus-divider">
