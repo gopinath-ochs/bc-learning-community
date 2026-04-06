@@ -33,8 +33,6 @@
       font-size: 16px;
       -webkit-font-smoothing: antialiased;
     }
-
-    /* Hero */
     .hero {
       min-height: 65vh;
       display: flex;
@@ -94,10 +92,7 @@
       font-weight: 300;
       position: relative; z-index: 2;
     }
-    .hero-cta {
-      margin-top: 36px;
-      position: relative; z-index: 2;
-    }
+    .hero-cta { margin-top: 36px; position: relative; z-index: 2; }
     .hero-cta a {
       display: inline-block;
       font-family: var(--font-sans);
@@ -112,18 +107,8 @@
       text-decoration: none;
       transition: all 0.2s;
     }
-    .hero-cta a:hover {
-      border-color: var(--color-gold);
-      color: var(--color-gold-light);
-    }
-
-    /* Divider */
-    .lotus-divider {
-      display: flex; align-items: center; justify-content: center;
-      padding: 8px 24px;
-    }
-
-    /* Sections */
+    .hero-cta a:hover { border-color: var(--color-gold); color: var(--color-gold-light); }
+    .lotus-divider { display: flex; align-items: center; justify-content: center; padding: 8px 24px; }
     .section { max-width: 680px; margin: 0 auto; padding: 64px 24px; }
     .section-wide { max-width: 920px; margin: 0 auto; padding: 64px 24px; }
     @media (max-width: 600px) {
@@ -138,13 +123,8 @@
       margin-bottom: 24px;
       color: var(--color-text);
     }
-    .section p, .section-wide p {
-      margin-bottom: 18px;
-      color: var(--color-text-light);
-    }
+    .section p, .section-wide p { margin-bottom: 18px; color: var(--color-text-light); }
     .section p:last-child { margin-bottom: 0; }
-
-    /* Context note */
     .context-line {
       font-size: 0.88rem;
       font-style: italic;
@@ -153,8 +133,6 @@
       padding-left: 14px;
       border-left: 2px solid rgba(196,164,108,0.25);
     }
-
-    /* Warm background sections */
     .bg-warm { background: var(--color-bg-warm); padding: 64px 24px; }
     @media (max-width: 600px) { .bg-warm { padding: 48px 20px; } }
     .bg-warm .inner { max-width: 680px; margin: 0 auto; }
@@ -174,8 +152,6 @@
       color: var(--color-accent);
       font-style: italic;
     }
-
-    /* Offerings grid */
     .offerings-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -207,15 +183,7 @@
       color: var(--color-text);
     }
     .offering-card p { font-size: 0.88rem; line-height: 1.65; color: var(--color-text-light); margin: 0; }
-    .offerings-note {
-      text-align: center;
-      margin-top: 28px;
-      font-size: 0.83rem;
-      font-style: italic;
-      color: #8A9A8E;
-    }
-
-    /* Courses */
+    .offerings-note { text-align: center; margin-top: 28px; font-size: 0.83rem; font-style: italic; color: #8A9A8E; }
     .courses-section {
       background: var(--color-accent-deep);
       padding: 64px 24px;
@@ -260,8 +228,6 @@
     }
     .course-tag:hover { border-color: var(--color-gold); color: var(--color-gold-light); }
     .courses-note { margin-top: 28px; font-size: 0.83rem; font-style: italic; color: #8A9A8E; max-width: 620px; }
-
-    /* Form */
     .form-section { background: var(--color-bg-warm); padding: 64px 24px; }
     @media (max-width: 600px) { .form-section { padding: 48px 20px; } }
     .form-inner { max-width: 600px; margin: 0 auto; }
@@ -339,8 +305,6 @@
       margin-top: 6px;
     }
     .submit-btn:hover { background: var(--color-accent-light); }
-
-    /* Closing */
     .closing {
       text-align: center;
       padding: 64px 24px;
@@ -350,12 +314,9 @@
     .closing p { color: var(--color-text-light); font-size: 0.92rem; line-height: 1.8; }
     .closing .signature { margin-top: 24px; font-family: var(--font-serif); font-weight: 500; font-size: 1.05rem; color: var(--color-text); }
     .closing .role { font-size: 0.83rem; color: #8A9A8E; margin-top: 3px; }
-
-    /* Thank you */
     .thank-you { display: none; text-align: center; padding: 48px 24px; }
     .thank-you h3 { font-family: var(--font-serif); font-weight: 500; font-size: 1.7rem; margin-bottom: 14px; color: var(--color-text); }
     .thank-you p { color: var(--color-text-light); max-width: 380px; margin: 0 auto; }
-
     footer {
       text-align: center;
       padding: 28px 24px;
@@ -363,8 +324,6 @@
       color: #A8B5AC;
       border-top: 1px solid var(--color-border);
     }
-
-    /* Faculty section */
     .faculty-section {
       background: var(--color-accent-deep);
       padding: 72px 24px;
@@ -379,15 +338,8 @@
         radial-gradient(circle at 90% 50%, rgba(196,164,108,0.05) 0%, transparent 45%);
       pointer-events: none;
     }
-    .faculty-inner {
-      max-width: 860px;
-      margin: 0 auto;
-      position: relative; z-index: 1;
-    }
-    .faculty-header {
-      text-align: center;
-      margin-bottom: 52px;
-    }
+    .faculty-inner { max-width: 860px; margin: 0 auto; position: relative; z-index: 1; }
+    .faculty-header { text-align: center; margin-bottom: 52px; }
     .faculty-label {
       font-family: var(--font-sans);
       font-weight: 400;
@@ -405,12 +357,7 @@
       margin-bottom: 12px;
       line-height: 1.25;
     }
-    .faculty-header p {
-      font-size: 0.9rem;
-      color: #8A9A8E;
-      max-width: 480px;
-      margin: 0 auto;
-    }
+    .faculty-header p { font-size: 0.9rem; color: #8A9A8E; max-width: 480px; margin: 0 auto; }
     .faculty-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -429,9 +376,7 @@
       transition: background 0.2s;
       line-height: 1.3;
     }
-    .faculty-name:hover {
-      background: rgba(196,164,108,0.06);
-    }
+    .faculty-name:hover { background: rgba(196,164,108,0.06); }
     .faculty-title {
       font-family: var(--font-sans);
       font-weight: 300;
@@ -540,9 +485,7 @@
   <div class="form-inner">
     <h2>We would like to hear from you</h2>
     <p>This idea is still forming. Your honest perspective will directly shape what we build.</p>
-
     <form id="feedbackForm" action="https://formspree.io/f/xwvrrgoe" method="POST">
-
       <div class="form-group">
         <label>Would you join a learning community like this?</label>
         <div class="radio-group">
@@ -551,25 +494,21 @@
           <label><input type="radio" name="interest" value="Not for me right now"><span>Not for me right now</span></label>
         </div>
       </div>
-
       <div class="form-group">
         <label>What would make this genuinely valuable for you?</label>
         <span class="label-note">Which offerings interest you most? What would keep you engaged month after month?</span>
         <textarea name="valuable" rows="4" placeholder="Share your thoughts..."></textarea>
       </div>
-
       <div class="form-group">
         <label>What are you less interested in?</label>
         <span class="label-note">Anything in the list below that doesn't appeal to you, or that you would skip?</span>
         <textarea name="not_interested" rows="3" placeholder="Share your thoughts..."></textarea>
       </div>
-
       <div class="form-group">
         <label>Any concerns?</label>
         <span class="label-note">Financial, cultural, pedagogical — anything on your mind.</span>
         <textarea name="concerns" rows="3" placeholder="Share your thoughts..."></textarea>
       </div>
-
       <div class="form-group">
         <label>What price feels appropriate for monthly membership?</label>
         <div class="radio-group">
@@ -580,12 +519,10 @@
           <label><input type="radio" name="price" value="It depends"><span>It depends</span></label>
         </div>
       </div>
-
       <div class="form-group">
         <label>Anything else you would like to share?</label>
         <textarea name="anything_else" rows="3" placeholder="Anything at all..."></textarea>
       </div>
-
       <div class="form-group">
         <label>Your details <span class="label-note" style="display:inline; margin:0;">(optional — if you would like us to follow up)</span></label>
         <div class="optional-fields">
@@ -593,10 +530,8 @@
           <input type="email" name="email" placeholder="Your email">
         </div>
       </div>
-
       <button type="submit" class="submit-btn">Share my feedback</button>
     </form>
-
     <div class="thank-you" id="thankYou">
       <h3>Thank you</h3>
       <p>Your thoughts will directly help shape what we build. We appreciate you taking the time.</p>
